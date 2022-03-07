@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:id="@+id/main"
+    tools:context=".MainActivity">
+
+    <androidx.cardview.widget.CardView
+        app:cardCornerRadius="5dp"
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/iphone"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:text="Iphone 7 plus"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#03BD22"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:padding="5dp"
+                android:text="$299.99"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that."/>
+
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+            <RadioGroup
+                android:layout_below="@id/card"
+                android:id="@+id/radio_group"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/master_card"
+                    android:checked="true"
+                    android:padding="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#99000000"
+                    android:text="Master Card"
+                    android:drawablePadding="10dp"
+                    android:drawableStart="@drawable/mastercard"/>
+
+                <RadioButton
+                    android:id="@+id/visa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#99000000"
+                    android:text="Visa Card"
+                    android:drawablePadding="10dp"
+                    android:drawableStart="@drawable/visa"/>
+
+                <RadioButton
+                    android:id="@+id/paypal"
+                    android:layout_width="match_parent"
+                    android:padding="5dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="#99000000"
+                    android:text="PayPal"
+                    android:drawablePadding="10dp"
+                    android:drawableStart="@drawable/paypal"/>
+
+            </RadioGroup>
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnPay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/teal_200"
+        android:textColor="@color/white"
+        android:text="Pay"/>
+
+</RelativeLayout>
